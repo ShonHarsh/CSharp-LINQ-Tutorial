@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 
 namespace Exercises
 {
@@ -11,7 +12,9 @@ namespace Exercises
         //which will count all words longer than 10 letters.
         public static int CountAllLongWords(IEnumerable<string> words)
         {
-            //TODO your code goes here
+            var countOfLongWords = words.Count(word => word.Length > 10);
+            return countOfLongWords;
+
             throw new NotImplementedException();
         }
 
@@ -30,7 +33,14 @@ namespace Exercises
          */
         public static bool AreThereFewerOddThanEvenNumbers(IEnumerable<int> numbers)
         {
-            //TODO your code goes here
+            //First solution
+            //return numbers.Count(number => number % 2 == 0) > numbers.Count(number => number %2 != 0);
+
+            //Efficient Solution
+            var countOfEvenNumbers = numbers.Count(number => number % 2 == 0);
+            var countOfOddNumbers = numbers.Count() - countOfEvenNumbers;
+            return countOfEvenNumbers > countOfOddNumbers;
+
             throw new NotImplementedException();
         }
 
@@ -38,7 +48,7 @@ namespace Exercises
         //TODO implement this method
         public static bool IsAnySequenceTooLong_Refactored(IEnumerable<IEnumerable<int>> numberSequences, int maxLength)
         {
-            //TODO your code goes here
+            return numberSequences.Any(numberSequence => numberSequence.Count() > maxLength);
             throw new NotImplementedException();
         }
 
