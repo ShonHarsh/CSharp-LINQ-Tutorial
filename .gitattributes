@@ -1,0 +1,65 @@
+# Automatically normalize line endings for text files
+* text=auto
+
+# Language CSharp
+*.xaml linguist-language=CSharp
+
+# Markdown Files
+# Denotes that the Markdown files are detectable by Linguist
+*.md linguist-detectable=true
+# Specifies that the Markdown files are documentation
+*.md linguist-documentation=false
+# Specifies that the Markdown files are not generated
+*.md linguist-generated=false
+# Specifies that the Markdown files are not vendored
+*.md linguist-vendored=false
+
+# Binary Files - Denotes binary files to prevent line ending and encoding modifications
+
+# Binary Archive
+*.7z
+*.br
+*.bz2
+*.gz
+*.rar
+*.tar
+*.xz
+*.zip
+
+# Binary Audio
+*.mp3
+*.ogg
+*.wav
+
+# Binary Document
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+
+# Binary Executable/Library
+*.dll
+*.exe
+*.lib
+*.so
+
+# Binary Image
+*.bmp
+*.gif
+*.ico
+*.jpeg
+*.jpg
+*.png
+*.svg
+*.tif
+*.tiff
+
+# Binary Video
+*.avi
+*.flv
+*.mov
+*.mp4
+*.wmv
