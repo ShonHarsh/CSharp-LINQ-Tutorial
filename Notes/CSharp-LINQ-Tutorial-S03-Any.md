@@ -4,8 +4,19 @@
 
 ### Section 03 - Any
 
-**Any** is used to check if any element in the selection matches the given criteria.
+###### Definition
+Any - Determines whether any element of a sequence exists or satisfies a condition.
 
+###### Method Signature
+public static bool Any<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);
+
+###### Documentation
+[Any](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any)
+
+###### Notes
+None
+
+###### Example
 Example: Validate if a number in an array is larger then 10.
 
 ```c
