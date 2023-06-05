@@ -7,8 +7,8 @@
 ### Section 16 - Skip
 
 ###### Definition
-Skip - Bypasses a specified number of elements in a sequence and then returns the remaining elements.<br />
-SkipLast - Returns a new enumerable collection that contains the elements from source with the last count elements of the source collection omitted.<br />
+Skip - Bypasses a specified number of elements in a sequence and then returns the remaining elements.  
+SkipLast - Returns a new enumerable collection that contains the elements from source with the last count elements of the source collection omitted.  
 SkipWhile - Bypasses elements in a sequence as long as a specified condition is true and then returns the remaining elements.
 
 ###### Method Signature Example
@@ -19,8 +19,8 @@ SkipWhile - Bypasses elements in a sequence as long as a specified condition is 
 `public static System.Collections.Generic.IEnumerable<TSource> SkipWhile<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);`
 
 ###### Documentation
-[Enumerable.Skip<TSource>(IEnumerable<TSource>, Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skip)<br />
-[Enumerable.SkipLast<TSource>(IEnumerable<TSource>, Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skiplast)<br />
+[Enumerable.Skip<TSource>(IEnumerable<TSource>, Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skip)  
+[Enumerable.SkipLast<TSource>(IEnumerable<TSource>, Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skiplast)  
 [Enumerable.SkipWhile Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skipwhile)
 
 ###### Notes
