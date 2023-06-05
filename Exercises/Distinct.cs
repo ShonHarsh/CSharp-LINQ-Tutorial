@@ -18,7 +18,8 @@ namespace Exercises
          */
         public static bool AreAllUnique<T>(IEnumerable<T> collection)
         {
-            //TODO your code goes here
+            return collection.Distinct().Count() == collection.Count();
+
             throw new NotImplementedException();
         }
 
@@ -44,16 +45,21 @@ namespace Exercises
         public static IEnumerable<T> GetCollectionWithMostDuplicates<T>(
             IEnumerable<IEnumerable<T>> collections)
         {
-            //TODO your code goes here
+            return collections
+                .OrderBy(
+                    collection => collection.Count() - collection.Distinct().Count())
+                .ThenByDescending(collection => collection.Count())
+                .LastOrDefault();
+
             throw new NotImplementedException();
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static IEnumerable<string> GetWordsShorterThan5Letters_Refactored(
             IEnumerable<string> words)
         {
-            //TODO your code goes here
+            return words.Distinct().Where(word => word.Length < 5);
+
             throw new NotImplementedException();
         }
 
