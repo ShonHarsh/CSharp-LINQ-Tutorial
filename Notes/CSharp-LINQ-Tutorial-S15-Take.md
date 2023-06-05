@@ -7,8 +7,8 @@
 ### Section 15 - Take, TakeLast, & TakeWhile
 
 ###### Definition
-Take - Returns a specified number of contiguous elements from the start of a sequence.<br />
-TakeLast - Returns a new enumerable collection that contains the last count elements from source.<br />
+Take - Returns a specified number of contiguous elements from the start of a sequence.  
+TakeLast - Returns a new enumerable collection that contains the last count elements from source.  
 TakeWhile - Returns elements from a sequence as long as a specified condition is true, and then skips the remaining elements.
 
 ###### Method Signature Example
@@ -17,7 +17,7 @@ TakeWhile - Returns elements from a sequence as long as a specified condition is
 `public static System.Collections.Generic.IEnumerable<TSource> TakeLast<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, int count);`
 
 ###### Documentation
-[Enumerable.Take Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take)<br />
+[Enumerable.Take Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take)  
 [Enumerable.TakeLast<TSource>(IEnumerable<TSource>, Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.takelast)<be />
 [Enumerable.TakeWhile Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.takewhile)
 
