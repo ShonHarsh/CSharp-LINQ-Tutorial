@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -9,7 +11,7 @@ Min - Returns the minimum value in a sequence of values.<br />
 Max - Returns the maximum value in a sequence of values.
 
 ###### Method Signature Example
-public static int? Min (this System.Collections.Generic.IEnumerable<int?> source);
+`public static int? Min (this System.Collections.Generic.IEnumerable<int?> source);`
 
 ###### Documentation
 [Enumerable.Min Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.min)<br />
@@ -18,7 +20,7 @@ public static int? Min (this System.Collections.Generic.IEnumerable<int?> source
 ###### Notes
 1. For non-nullable types (such as integer), an exception will be thrown if the collection is empty.
 2. For nullable types, the result for an empty collection will be null.
-3. The same implementation of the CompareTo call can me completed as it is in the OrderrBy section.
+3. The same implementation of the `CompareTo` call can me completed as it is in the `OrderBy` section.
 
 ###### Example
 Find the minimum number in an integer array.
