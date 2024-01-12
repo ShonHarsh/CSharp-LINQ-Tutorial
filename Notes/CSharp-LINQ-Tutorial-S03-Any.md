@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -8,7 +10,7 @@
 Any - Determines whether any element of a sequence exists or satisfies a condition.
 
 ###### Method Signature Example
-public static bool Any<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);
+`public static bool Any<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);`
 
 ###### Documentation
 [Enumerable.Any Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any)
