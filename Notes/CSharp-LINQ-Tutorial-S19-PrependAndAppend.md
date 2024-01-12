@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -5,13 +7,17 @@
 ### Section 19 - Prepend & Append
 
 ###### Definition
-A - Note
+Append - Appends a value to the end of the sequence.<br />
+Prepend - Adds a value to the beginning of the sequence.
 
 ###### Method Signature Example
-m
+`public static System.Collections.Generic.IEnumerable<TSource> Append<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, TSource element);`
+
+`public static System.Collections.Generic.IEnumerable<TSource> Prepend<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, TSource element);`
 
 ###### Documentation
-[A]()
+[Enumerable.Append<TSource>(IEnumerable<TSource>, TSource) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.append)<br />
+[Enumerable.Prepend<TSource>(IEnumerable<TSource>, TSource) Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.prepend)
 
 ###### Notes
 1. A
@@ -28,8 +34,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\PrependAppend.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\PrependAppend.cs
