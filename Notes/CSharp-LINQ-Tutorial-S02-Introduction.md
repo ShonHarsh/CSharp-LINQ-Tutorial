@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -215,10 +217,10 @@ public static bool Any<TSource>(
 
 ##### LINQ, IEnumerable<T> and the method changing
 
-- Examples of types that implement IEnumerable are Array, Dictionary, HashSet, List.
-- If the type implements IEnumerable, then LINQ works with it.
+- Examples of types that implement `IEnumerable` are Array, Dictionary, HashSet, List.
+- If the type implements `IEnumerable`, then LINQ works with it.
 - LINQ will never modify the input collections.  Thus there is no Add, Remove or Clear.
-- LINQ arguments and return type are both IEnumerable<T>.  This allows chaining of operations.
+- LINQ arguments and return type are both `IEnumerable<T>`.  This allows chaining of operations.
 
 #### Method chaining
 
