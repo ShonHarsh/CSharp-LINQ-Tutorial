@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -8,9 +10,9 @@
 OrderBy - Sorts the elements of a sequence in ascending order.
 
 ###### Method Signature Example
-public static System.Linq.IOrderedEnumerable<TSource> OrderBy<TSource,TKey> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,TKey> keySelector);
+`public static System.Linq.IOrderedEnumerable<TSource> OrderBy<TSource,TKey> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,TKey> keySelector);`
 
-public static System.Linq.IOrderedEnumerable<TSource> OrderBy<TSource,TKey> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,TKey> keySelector, System.Collections.Generic.IComparer<TKey>? comparer);
+`public static System.Linq.IOrderedEnumerable<TSource> OrderBy<TSource,TKey> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,TKey> keySelector, System.Collections.Generic.IComparer<TKey>? comparer);`
 
 ###### Documentation
 [Enumerable.OrderBy Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.orderby)
@@ -23,7 +25,7 @@ public static System.Linq.IOrderedEnumerable<TSource> OrderBy<TSource,TKey> (thi
 5. `.ThenBy` is a chaining method that can be used after `OrderBy`.
 6. The `IComparer<TKey>? comparer` can be used to tell if one object should be placed before or after another when ordering them.
 7. The use case for the `IComparer` interface is when the natural order, alphabetical or numeric, is incorrect.
-8. The `IComparer` class can be used to set a complex ordering type and then a single point of code can control this ordering.  That way every time the order method is used a complex LINQ query is not required to be written.
+8. The `IComparer` class can be used to set a complex ordering type and then a single point of code can control this ordering.  That way every time the `OrderBy` method is used a complex LINQ query is not required to be written.
 9. The `Reverse` method takes no parameters and simply reverses the collection.
 10. An important note is that in C# when ordering a collection by a boolean variable, the **false** values come before **true** values.
 
