@@ -6,9 +6,9 @@ This project contains resources for the class [LINQ Tutorial: Master the Key C# 
 
 I am still working on the course but can already say that it is **extremely good!**  I have learned a lot about LINQ and C# already.  I am so impressed that am going to purchase all of Krystyna's courses.  I very much appreciate the work that Krystyna has put into the material.  There are many practices and code tests.
 
- [!WARNING] This repository is not forked.  Take note because it may not have updates from the source.  I chose to duplicate it locally because I did not want to inadvertently create a pull request back to the course files while I was working.
+ > [!WARNING] This repository is not forked.  Take note because it may not have updates from the source.  I chose to duplicate it locally because I did not want to inadvertently create a pull request back to the course files while I was working.
 
- [Note] The course repository is located [LinqTutorialNet6
+ > [Note] The course repository is located [LinqTutorialNet6
 ](https://github.com/KrystynaSlusarczykLearning/LinqTutorialNet6)
 
 ## FAQ:
