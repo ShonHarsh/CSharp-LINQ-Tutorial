@@ -9,7 +9,8 @@ I am still working on the course but can already say that it is **extremely good
 > [!WARNING]
 > This repository is not forked.  Take note because it may not have updates from the source.  I chose to duplicate it locally because I did not want to inadvertently create a pull request back to the course files while I was working.
 
- > [!Note] The course repository is located [LinqTutorialNet6
+> [!Note]
+> The course repository is located [LinqTutorialNet6
 ](https://github.com/KrystynaSlusarczykLearning/LinqTutorialNet6)
 
 ## FAQ:
