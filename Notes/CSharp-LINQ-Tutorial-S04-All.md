@@ -4,9 +4,20 @@
 
 ### Section 04 - All
 
-**All** is used to check if all element in the selection matches the given criteria.
+###### Definition
+All - Determines whether all elements of a sequence satisfy a condition.
 
-Example: Validate if all numbers in an array are larger than zero.
+###### Method Signature
+public static bool All<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);
+
+###### Documentation
+https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all
+
+###### Notes
+None
+
+###### Example
+Validate if all numbers in an array are larger than zero.
 
 ```c
 static void Main(string[] args)
