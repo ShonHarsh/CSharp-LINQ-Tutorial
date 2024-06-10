@@ -2,16 +2,18 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 12 - FirstLast
 
 ###### Definition
-A - Note
+First - Returns the first element of a sequence.
+Last - Returns the last element of a sequence.
 
-###### Method Signature
-m
+###### Method Signature Example
+public static TSource First<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);
 
 ###### Documentation
-[A]()
+[Enumerable.First Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.first)
+[Enumerable.Last Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.last)
 
 ###### Notes
 1. A
@@ -28,8 +30,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\FirstLast.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\FirstLast.cs

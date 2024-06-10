@@ -2,12 +2,12 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 31 - OrderBy (Query Syntax)
 
 ###### Definition
 A - Note
 
-###### Method Signature
+###### Method Signature Example
 m
 
 ###### Documentation

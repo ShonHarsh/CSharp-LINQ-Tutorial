@@ -54,7 +54,7 @@ namespace Exercises
          */
         public static int CountFriendsOf(Friend friend, IEnumerable<Person> people)
         {
-            return people.Count(person => perrson.Friends.Contains(friend));
+            return people.Count(person => person.Friends.Contains(friend));
             throw new NotImplementedException();
         }
 

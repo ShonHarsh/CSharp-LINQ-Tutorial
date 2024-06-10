@@ -2,16 +2,16 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 11 - ElementAt
 
 ###### Definition
-A - Note
+ElementAt - Returns the element at a specified index in a sequence
 
-###### Method Signature
-m
+###### Method Signature Example
+public static TSource ElementAt<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Index index);
 
 ###### Documentation
-[A]()
+[Enumerable.ElementAt Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat)
 
 ###### Notes
 1. A
@@ -28,8 +28,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\ElementAt.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\ElementAt.cs

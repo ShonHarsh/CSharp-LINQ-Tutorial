@@ -19,7 +19,10 @@ namespace Exercises
          */
         public static int? LengthOfTheShortestWord(IEnumerable<string> words)
         {
-            //TODO your code goes here
+            return words.Any() ?
+                words.Min(word => word.Length) :
+                (int?)null;
+
             throw new NotImplementedException();
         }
 
@@ -38,16 +41,28 @@ namespace Exercises
          */
         public static int CountOfLargestNumbers(IEnumerable<int> numbers)
         {
-            //TODO your code goes here
+            //Faster answer because it calculates the maximum only once
+            if (!numbers.Any())
+            {
+                return 0;
+            }
+
+            var max = numbers.Max();
+            return numbers.Count(number => number == max);
+
+            //This is the shortest solution, but it calculates the maximum number multiple times.
+            //return numbers.Count(number => number == numbers.Max());
+
             throw new NotImplementedException();
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static int CountOfDogsOfTheOwnerWithMostDogs_Refactored(
             IEnumerable<Person> owners)
         {
-            //TODO your code goes here
+            //PetType.Dog
+            return owners.Max(owner => owner.Pets.Count(pet => pet.PetType == PetType.Dog));
+
             throw new NotImplementedException();
         }
 

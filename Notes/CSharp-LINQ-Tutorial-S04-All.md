@@ -7,11 +7,11 @@
 ###### Definition
 All - Determines whether all elements of a sequence satisfy a condition.
 
-###### Method Signature
+###### Method Signature Example
 public static bool All<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);
 
 ###### Documentation
-https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all
+[Enumerable.All<TSource> Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all)
 
 ###### Notes
 None

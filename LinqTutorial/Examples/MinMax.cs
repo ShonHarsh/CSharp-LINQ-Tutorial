@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using Utilities;
 
 namespace LinqTutorial
@@ -26,7 +28,12 @@ namespace LinqTutorial
 
             var heaviestPetsWeight = Data.Pets.Max(pet => pet.Weight);
             Console.WriteLine($"heaviestPetsWeight: {heaviestPetsWeight}");
+
+            IEnumerable<string> words = new string[] {"aaa", "bb", "c", "dddd"};
+            int LengthOfTheShortestWord = words.Min(word => word.Length);
+            Console.WriteLine("LengthOfTheShortestWord: " + LengthOfTheShortestWord.ToString());
             
+
             //if we don't pass the selector when finding
             //Min or Max of the collection that does not
             //implement the IComparable interface

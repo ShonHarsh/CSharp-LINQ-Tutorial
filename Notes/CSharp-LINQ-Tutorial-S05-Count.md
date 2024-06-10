@@ -7,11 +7,11 @@
 ###### Definition
 Count - Returns the number of elements in a sequence.
 
-###### Method Signature
+###### Method Signature Example
 public static int Count<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);
 
 ###### Documentation
-[All](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count)
+[Enumerable.Count Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count)
 
 ###### Notes
 1. Count returns an integer.  Int ranges from -2,147,483,648 to 2,147,483,647.
