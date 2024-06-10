@@ -7,11 +7,11 @@
 ###### Definition
 Any - Determines whether any element of a sequence exists or satisfies a condition.
 
-###### Method Signature
+###### Method Signature Example
 public static bool Any<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);
 
 ###### Documentation
-[Any](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any)
+[Enumerable.Any Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any)
 
 ###### Notes
 None
