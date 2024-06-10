@@ -7,11 +7,11 @@
 ###### Definition
 Contains - Determines whether a sequence contains a specified element.
 
-###### Method Signature
+###### Method Signature Example
 public static bool Contains<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, TSource value);
 
 ###### Documentation
-[Contains](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains)
+[Enumerable.Contains Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains)
 
 ###### Notes
 1. Since the Pet class does not implement the IEquatable<T> or the Equals method, the default System.Object implementation will be used.  This default implementation for classes compares objects by reference.
