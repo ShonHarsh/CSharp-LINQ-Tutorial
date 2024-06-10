@@ -46,7 +46,7 @@ static void Main(string[] args)
 ```
 
 
-###### IComparer<TKey>? comparer
+###### IComparer<TKey>? comparer Example
 
 This is an example of setting the IComparer class to define the compare operation to order by pet type.
 
