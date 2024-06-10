@@ -2,12 +2,12 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 20 - Concat & Union
 
 ###### Definition
 A - Note
 
-###### Method Signature
+###### Method Signature Example
 m
 
 ###### Documentation
