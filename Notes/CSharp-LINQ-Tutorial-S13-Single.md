@@ -2,16 +2,16 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 13 - Single
 
 ###### Definition
-A - Note
+Single - Returns a single, specific element of a sequence.
 
-###### Method Signature
-m
+###### Method Signature Example
+public static TSource Single<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);
 
 ###### Documentation
-[A]()
+[Enumerable.Single Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.single)
 
 ###### Notes
 1. A
@@ -28,8 +28,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Single.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Single.cs
