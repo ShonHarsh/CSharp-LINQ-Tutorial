@@ -2,16 +2,16 @@
 
 ##### Author: Krystyna Ślusarczyk
 
-### Section 00 - A
+### Section 09 - Average
 
 ###### Definition
-A - Note
+Average - Computes the average of a sequence of numeric values.
 
-###### Method Signature
-m
+###### Method Signature Example
+public static float Average (this System.Collections.Generic.IEnumerable<float> source);
 
 ###### Documentation
-[A]()
+[Enumerable.Average Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.average)
 
 ###### Notes
 1. A
@@ -28,8 +28,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Average.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Average.cs
