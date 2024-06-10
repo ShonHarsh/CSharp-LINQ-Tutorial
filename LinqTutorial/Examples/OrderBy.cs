@@ -15,6 +15,16 @@ namespace LinqTutorial
         //System.Linq.Enumerable.Reverse
         public static void Run()
         {
+            int[] evenOdd = new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+            var evenOddWork = evenOdd.OrderBy(number => number % 2 != 0);
+            Printer.Print(evenOddWork, nameof(evenOddWork));
+            Console.WriteLine("");
+
+            var evenOddWorkDescending = evenOdd.OrderByDescending(number => number % 2 != 0);
+            Printer.Print(evenOddWorkDescending, nameof(evenOddWorkDescending));
+            Console.WriteLine("");
+
             //OrderBy creates a copy of the collection,
             //which is ordered by the given criteria
             var petsOrderedByName = Data.Pets.OrderBy(pet => pet.Name);
