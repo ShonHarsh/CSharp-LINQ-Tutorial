@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-01.png)
+
 # CSharp-LINQ-Tutorial
 
 This project contains resources for the class [LINQ Tutorial: Master the Key C# Library](https://www.udemy.com/course/linq-tutorial-master-the-key-csharp-library/?referralCode=384B340D233F12F6A498) authored by Krystyna Ślusarczyk.
