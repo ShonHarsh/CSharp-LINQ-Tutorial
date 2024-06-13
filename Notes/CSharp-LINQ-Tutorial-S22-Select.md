@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -5,13 +7,13 @@
 ### Section 22 - Select
 
 ###### Definition
-A - Note
+Select - Projects each element of a sequence into a new form.
 
 ###### Method Signature Example
-m
+`public static System.Collections.Generic.IEnumerable<TResult> Select<TSource,TResult> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,int,TResult> selector);`
 
 ###### Documentation
-[A]()
+[Enumerable.Select Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.select)
 
 ###### Notes
 1. A
@@ -28,8 +30,8 @@ static void Main(string[] args)
 
 ##### Visual Studio - Code Examples
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Select.cs
 
 ##### Visual Studio - Code Exercises
 
-LinqTutorial\Exercises\A.cs
+LinqTutorial\Exercises\Select.cs

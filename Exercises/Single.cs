@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,7 +23,34 @@ namespace Exercises
          */
         public static string GetTheOnlyUpperCaseWord(IEnumerable<string> words)
         {
-            //TODO your code goes here
+            int upperCaseWordCount = words.Count(word => word == word.ToUpper());
+
+            //no upper case string is present
+            if (upperCaseWordCount == 0)
+            {
+                return null;
+            }
+
+            //two or more upper case strings are present.
+            if (upperCaseWordCount > 1)
+            {
+                throw new InvalidOperationException();
+            }
+
+            return words.Single(word => word == word.ToUpper());
+
+            /*
+             * Exercise Solution 01
+             */
+            //return words.SingleOrDefault(
+            //word => word.ToUpper() == word);
+
+            /*
+             * Exercise Solution 02
+             */
+            //return words.SingleOrDefault(
+                //word => word.All(character => char.IsUpper(character)));
+
             throw new NotImplementedException();
         }
 
@@ -59,16 +87,20 @@ namespace Exercises
         public static IEnumerable<int> GetSingleElementCollection(
             IEnumerable<IEnumerable<int>> numberCollections)
         {
-            //TODO your code goes here
+            return numberCollections.Single(
+                collection => collection.Count() == 1);
+
             throw new NotImplementedException();
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static DateTime? GetSingleDay_Refactored(
             IEnumerable<DateTime> dates, DayOfWeek dayOfWeek)
         {
-            //TODO your code goes here
+            return dates.Count(date => date.DayOfWeek == dayOfWeek) == 1 ?
+                dates.Single(date => date.DayOfWeek == dayOfWeek) :
+                (DateTime?) null;
+
             throw new NotImplementedException();
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 
 namespace Exercises
 {
@@ -23,7 +24,13 @@ namespace Exercises
         public static bool IsTheNumberAtIndexTheLargest(
             IEnumerable<int> numbers, int index)
         {
-            //TODO your code goes here
+            if (index < 0 || index >= numbers.Count())
+            {
+                return false;
+            }
+
+            return numbers.Max() == numbers.ElementAt(index);
+
             throw new NotImplementedException();
         }
 
@@ -39,7 +46,17 @@ namespace Exercises
         public static string FormatPetDataAtIndex(
             IEnumerable<Pet> pets, int index)
         {
-            //TODO your code goes here
+            var pet = pets.ElementAtOrDefault(index);
+
+            if (pet == null)
+            {
+                return $"Pet data is missing for index {index}";
+            }
+            else
+            {
+                return $"Pet name: {pet.Name}";
+            }
+
             throw new NotImplementedException();
         }
 
@@ -47,7 +64,13 @@ namespace Exercises
         //TODO implement this method
         public static bool IsEmptyAtIndex_Refactored(IEnumerable<string> words, int index)
         {
-            //TODO your code goes here
+            //attempt
+            //return words.ElementAtOrDefault(index) == null;
+
+            //Exercise Answer
+            return string.IsNullOrEmpty(
+                words.ElementAtOrDefault(index));
+
             throw new NotImplementedException();
         }
 

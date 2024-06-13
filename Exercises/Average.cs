@@ -23,8 +23,44 @@ namespace Exercises
         */
         public static float? AverageSnowFall(SnowFallData snowFallData)
         {
-            //TODO your code goes here
+            /* First Answer
+            if (snowFallData == null || 
+                snowFallData.MonthlySnowFallDataItems == null ||
+                snowFallData.MonthlySnowFallDataItems.Count() != 12)
+            {
+                return null;
+            }
+
+            return snowFallData.MonthlySnowFallDataItems.Average(snowFall => snowFall.SnowfallInCentimeters);
+             */
+
+            return isValid(snowFallData) ?
+                snowFallData.MonthlySnowFallDataItems.Average(
+                    snowFall => snowFall.SnowfallInCentimeters) :
+                null;
             throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Validates if the monthly snow fall data is valid by checking if the
+        /// SnowFallData and the SnowFallData.MonthlySnowFallDataItems is not
+        /// null and the month count it 12.
+        /// </summary>
+        /// <param name="snowFallData">The snow fall data</param>
+        /// <returns>A boolean value representing if the snow fall data is valid.</returns>
+        private static bool isValid(SnowFallData snowFallData)
+        {
+            bool isValid = false;
+
+            //validate null
+            if (snowFallData != null &&
+                snowFallData.MonthlySnowFallDataItems != null &&
+                snowFallData.MonthlySnowFallDataItems.Count() == 12)
+            {
+                isValid = true;
+            }
+
+            return isValid;
         }
 
         //Coding Exercise 2
@@ -48,16 +84,28 @@ namespace Exercises
          */
         public static double MaxAverageOfMarks(IEnumerable<Student> students)
         {
-            //TODO your code goes here
+            //course answer
+            return students.Any() ?
+                students.Max(
+                    Student => Student.Marks.Any() ?
+                    Student.Marks.Average() :
+                    0) :
+                0;
+
             throw new NotImplementedException();
         }
+
 
         //Refactoring challenge
         //TODO implement this method
         public static float CalculateAverageHeight_Refactored(
             List<float?> heights, float defaultIfNull)
         {
-            //TODO your code goes here
+            //course answer
+            return heights == null || !heights.Any() ?
+                0 :
+                heights.Average(
+                    height => height ?? defaultIfNull);
             throw new NotImplementedException();
         }
 

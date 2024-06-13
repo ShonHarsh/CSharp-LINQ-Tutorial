@@ -1,3 +1,5 @@
+![UiPath](https://shonharsh.github.io/curriculum-vitae/Images/GitHub-Banner-CSharp-02.png)
+
 # LINQ Tutorial: Master The Key C# Library
 
 ##### Author: Krystyna Ślusarczyk
@@ -8,7 +10,7 @@
 All - Determines whether all elements of a sequence satisfy a condition.
 
 ###### Method Signature Example
-public static bool All<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);
+`public static bool All<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);`
 
 ###### Documentation
 [Enumerable.All<TSource> Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all)
