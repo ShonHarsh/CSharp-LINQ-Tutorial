@@ -1,9 +1,6 @@
 # Automatically normalize line endings for text files
 * text=auto
 
-# Language CSharp
-*.xaml linguist-language=CSharp
-
 # Markdown Files
 # Denotes that the Markdown files are detectable by Linguist
 *.md linguist-detectable=true
