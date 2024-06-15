@@ -22,7 +22,7 @@ namespace LinqTutorial
             //SingleElement.Run();
             //Where.Run();
             //Take.Run();
-            //Skip.Run();
+            Skip.Run();
             //OfType.Run();
             //Distinct.Run();
             //PrependAppend.Run();

@@ -27,7 +27,7 @@ Find all the elements that are odd.
 static void Main(string[] args)
 {
   var numbers = new{} { 10, 1, 4, 17, 122 };
-  var evenNumbers = numberrs.Where(number => number % 2 == 0);
+  var evenNumbers = numbers.Where(number => number % 2 == 0);
 
   var verySpecificPets = pets.Where(pet =>
     (pet.PetType == PetType.Cat ||
