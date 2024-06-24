@@ -16,15 +16,19 @@ Distinct - Returns distinct elements from a sequence.
 [Enumerable.Distinct Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct)
 
 ###### Notes
-1. A
+1. The `Disctinct` method removes all duplicate values from a collection returning a unique collection.
+2. C# references equality differently for base types and reference types.  Thus a `Distinct` method on a collection of pets will not remove the pets because they have different references.
+3. Reference the contains method to review the  base types and reference types differences.
+4. There is an overloaded distinct method where a comparer method can be passed in.  This can be used to compare reference type objects.
 
 ###### Example
-A
+Removing duplicate integers from an array.
 
 ```c
 static void Main(string[] args)
 {
-
+  var numbers = new[] { 10, 1, 10, 4, 17, 17, 122 };
+  var numbersNoDuplicates = numbers.Distinct();
 }
 ```
 

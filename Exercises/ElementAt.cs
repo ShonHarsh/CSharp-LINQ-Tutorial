@@ -61,7 +61,6 @@ namespace Exercises
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static bool IsEmptyAtIndex_Refactored(IEnumerable<string> words, int index)
         {
             //attempt

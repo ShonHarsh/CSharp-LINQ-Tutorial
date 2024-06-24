@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercises
 {
@@ -22,7 +23,15 @@ namespace Exercises
          */
         public static double CalculateAverageMark(Student student)
         {
-            //TODO your code goes here
+            double marksAverage = 0;
+
+            if (student.Marks.Count() > 2)
+            {
+                marksAverage = student.Marks.Skip(1).SkipLast(1).Average();
+            }
+
+            return marksAverage;
+
             throw new NotImplementedException();
         }
 
@@ -50,16 +59,38 @@ namespace Exercises
          */
         public static IEnumerable<string> GetWordsBetweenStartAndEnd(List<string> words)
         {
-            //TODO your code goes here
+            const string collectionStart = "START";
+            const string collectionEnd = "END";
+            IEnumerable<string> wordCollection = new List<string>();
+
+            //make sure the START and END exist and are in the proper order
+            bool isValidCollection = 
+                words.Count(word => word == collectionStart) == 1 &&
+                words.Count(word => word == collectionEnd) == 1 &&
+                words.IndexOf(collectionStart) < words.IndexOf(collectionEnd);
+
+            if (isValidCollection)
+            {
+                wordCollection = words
+                    .SkipWhile(word => word != collectionStart) //Skip up to START
+                    .Skip(1) //skip the START element
+                    .TakeWhile(word => word != collectionEnd); //Take the remaining except END
+            }
+
+            return wordCollection;
+
             throw new NotImplementedException();
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static IEnumerable<int> GetAllAfterFirstDividableBy100_Refactored(
             IEnumerable<int> numbers)
         {
-            //TODO your code goes here
+            //Personal Attempt
+            //return numbers.SkipWhile(number => number < 100);
+            //Course Answer
+            return numbers.SkipWhile(number => number % 100 != 0);
+
             throw new NotImplementedException();
         }
 

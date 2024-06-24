@@ -22,12 +22,12 @@ namespace LinqTutorial
             //SingleElement.Run();
             //Where.Run();
             //Take.Run();
-            Skip.Run();
+            //Skip.Run();
             //OfType.Run();
             //Distinct.Run();
             //PrependAppend.Run();
             //ConcatUnion.Run();
-            //TypeSwitching.Run();           
+            TypeSwitching.Run();           
             //Select.Run();
             //SelectMany.Run();
             //GeneratingNewCollection.Run();

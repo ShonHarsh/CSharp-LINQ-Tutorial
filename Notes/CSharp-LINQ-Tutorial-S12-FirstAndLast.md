@@ -7,14 +7,14 @@
 ### Section 12 - FirstLast
 
 ###### Definition
-First - Returns the first element of a sequence.<br />
+First - Returns the first element of a sequence.  
 Last - Returns the last element of a sequence.
 
 ###### Method Signature Example
 `public static TSource First<TSource> (this System.Collections.Generic.IEnumerable<TSource> source);`
 
 ###### Documentation
-[Enumerable.First Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.first)<br />
+[Enumerable.First Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.first)  
 [Enumerable.Last Method](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.last)
 
 ###### Notes

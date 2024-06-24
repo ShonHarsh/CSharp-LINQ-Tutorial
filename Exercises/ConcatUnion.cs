@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercises
 {
@@ -26,7 +27,13 @@ namespace Exercises
         public static IEnumerable<News> SelectRecentAndImportant(
             IEnumerable<News> newsCollection)
         {
-            //TODO your code goes here
+            return newsCollection
+                .OrderByDescending(news => news.PublishingDate)
+                .Take(3)
+                .Union(
+                    newsCollection.Where(
+                        news => news.Priority == Priority.High));
+
             throw new NotImplementedException();
         }
 
@@ -49,16 +56,34 @@ namespace Exercises
          */
         public static string CleanWord(string word)
         {
-            //TODO your code goes here
+            var wordAsCharArray = word.ToCharArray();
+
+            return new string(
+                wordAsCharArray
+                .Where(character => char.IsLetter(character))
+                .Concat(
+                    wordAsCharArray.Where(
+                        character => !char.IsLetter(character))
+                    .Distinct())
+                .ToArray());
+
             throw new NotImplementedException();
         }
 
         //Refactoring challenge
-        //TODO implement this method
         public static IEnumerable<int> GetPerfectSquares_Refactored(
             IEnumerable<int> numbers1, IEnumerable<int> numbers2)
         {
-            //TODO your code goes here
+            return numbers1.Union(numbers2).Where(n => Math.Sqrt(n) % 1 == 0).OrderBy(n => n);
+
+            /**
+            return numbers1
+                .Where(HasNaturalSquareRoot)
+                .Concat(numbers2.Where(HasNaturalSquareRoot))
+                .Distinct()
+                .OrderBy(number => number);
+            **/
+
             throw new NotImplementedException();
         }
 
