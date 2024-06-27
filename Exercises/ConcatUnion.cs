@@ -87,6 +87,8 @@ namespace Exercises
             throw new NotImplementedException();
         }
 
+        static bool HasNaturalSquareRoot(int number) => Math.Sqrt(number) % 1 == 0;
+
         //do not modify this method
         public static IEnumerable<int> GetPerfectSquares(IEnumerable<int> numbers1, IEnumerable<int> numbers2)
         {
